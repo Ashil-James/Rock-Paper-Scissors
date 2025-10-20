@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #081b31;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 2rem 0;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.choice {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    box-shadow: 0 0 25px rgba(0, 191, 255, 0.6); 
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1); 
+    transform: scale(1.1); 
+    box-shadow: 0 0 40px rgba(0, 191, 255, 1);
+}
+
+.choice:active {
+    transform: scale(0.95); 
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+    gap: 6rem;
+}
+
+.score {
+    position: relative; 
+    width: 120px; 
+}
+
+#user-score,
+#comp-score {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+
+.score p:last-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: white;
+    color: #081b31;
+    padding: 3px 12px;
+    border-radius: 10px;  
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+}
+
+.msg-container {
+    margin-top: 4rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: white;
+    font-size: 1.5rem;  
+    font-weight: 600;
+    display: inline-block; 
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    border: 3px solid white;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
